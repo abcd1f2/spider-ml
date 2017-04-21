@@ -1,0 +1,21 @@
+[INFO  - 2017-04-21T02:23:23.119Z] GhostDriver - Main - running on port 51355
+[INFO  - 2017-04-21T02:23:26.535Z] Session [80477ed0-2639-11e7-bec1-0d1f48883070] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":false,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.23 Mobile Safari/537.36","webSecurityEnabled":true}
+[INFO  - 2017-04-21T02:23:26.535Z] Session [80477ed0-2639-11e7-bec1-0d1f48883070] - page.customHeaders:  - {}
+[INFO  - 2017-04-21T02:23:26.536Z] Session [80477ed0-2639-11e7-bec1-0d1f48883070] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/5.0 (Windows;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.23 Mobile Safari/537.36"}
+[INFO  - 2017-04-21T02:23:26.536Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 80477ed0-2639-11e7-bec1-0d1f48883070
+[ERROR - 2017-04-21T02:23:27.089Z] Session [80477ed0-2639-11e7-bec1-0d1f48883070] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-21T02:23:27.089Z] Session [80477ed0-2639-11e7-bec1-0d1f48883070] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:4)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
