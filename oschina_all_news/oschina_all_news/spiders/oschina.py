@@ -10,6 +10,8 @@ import urlparse
 import requests
 from items import OschinaAllNewsItem
 
+from scrapy.HTTP import Request
+
 class OschinaSpider(scrapy.spider):
     name='oschina_all_news'
     allowed_domains = ['oschina.net']
@@ -21,6 +23,12 @@ class OschinaSpider(scrapy.spider):
 
     def __init__(self):
         pass
+
+    """
+    def start_requests(self):
+        for url in self.start_urls:
+            yield self.make_requests_from_url(url)
+    """
 
     def parse(self, response):
         self.parse_details(response)
@@ -53,4 +61,3 @@ class OschinaSpider(scrapy.spider):
             dinfos = infos.xpath('a/span/text()').extract()
             if len(dinfos) > 0:
                 ite.comments = dinfos[0]
-
